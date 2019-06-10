@@ -9,10 +9,16 @@ def home(request):
     return render(request, 'templates/home.html', {})
 
 
-def get_command(request):
-    with open('files/command.txt', 'r') as f:
-        command = f.readline()
-    return JsonResponse({'command': command})
+def set_speed(request):
+    speed = request.GET.get('speed')
+    try:
+        with open('files/speed.txt', 'w') as f:
+            f.write(speed)
+        response = json.dumps({'error': False, 'data': 'Ok'}, indent=2)
+    except Exception as e:
+        response = json.dumps({'error': True, 'message': str(e)}, indent=2)
+
+    return HttpResponse(response, content_type='application/json')
 
 def get_speed(request):
     with open('files/speed.txt', 'r') as f:
@@ -42,10 +48,9 @@ def read_command(request):
         with open(file) as f:
             data = f.read().split(':')
         millis_prev = int(data[0])
-        command = data[1]             
+        command = data[1]
         millis_cur = int(round(time.time() * 1000))
-        print(millis_cur-millis_prev)
-        if millis_cur - millis_prev > 500:
+        if millis_cur - millis_prev > 600:
             data = 'None'
         else:
             data = command

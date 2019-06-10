@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Nexus</title>
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/ico">
 </head>
 <!--<body style="background-image: url({% static "images/background.jpg" %});">-->
 <body class="c_body">
@@ -12,15 +13,38 @@
     <div id = "btn-lstrafe" class="control-button">&#8592;</div>
     <div id = "btn-forward" class="control-button">&#8593;</div>
     <div id = "btn-rstrafe" class="control-button">&#8594;</div>
+    <div id = "btn-activate" class="control-button button-text">Act (T)</div>
 </div>
 <div class="control-button-block">
     <div id = "btn-lturn" class="control-button">&#8630;</div>
     <div id = "btn-backward" class="control-button">&#8595;</div>
     <div id = "btn-rturn" class="control-button">&#8631;</div>
+    <div id = "btn-deactivate" class="control-button button-text">DeAct (G)</div>
+</div>
+<div class="control-button-block">
+    <div id = "btn-minus-speed" class="control-button">-</div>
+    <div id = "div-speed" class="control-button speed"></div>
+    <div id = "btn-plus-speed" class="control-button">+</div>
 </div>
 </body>
 
 <script>
+var speed = 0;
+function writeSpeed(speed) {
+    document.getElementById('div-speed').innerHTML = speed;
+}
+
+fetch('/get_speed')
+    .then(response => response.json())
+    .then(data => {
+        speed = parseInt(data['speed'], 10);
+        writeSpeed(speed);
+    })
+    .catch(err => {
+        console.error('An error ocurred', err);
+    });
+
+
 var getJSON = function (url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -108,7 +132,6 @@ class Loader {
         //console.log('Created loader. Api : ' + this.api);
     }
 }
-    
 
 document.onkeydown = function(event) {
 
@@ -140,21 +163,52 @@ document.onkeydown = function(event) {
         document.getElementById("btn-rturn").classList.add("pressed");
         command = 'TurnRight';
     }
+    if (ch == "T".charCodeAt(0)) {
+        document.getElementById("btn-activate").classList.add("pressed");
+        command = 'Activate';
+    }
+    if (ch == "G".charCodeAt(0)) {
+        document.getElementById("btn-deactivate").classList.add("pressed");
+        command = 'Deactivate';
+    }
+    if (ch == 107) { // + sign
+        document.getElementById("btn-plus-speed").classList.add("pressed");
+        if (speed < 100) {
+            speed += 1;
+        }
+        api = '/set_speed?speed=' + speed;
+        new Loader(api);
+        writeSpeed(speed);
+    }
+    if (ch == 109) { // - sign
+        document.getElementById("btn-minus-speed").classList.add("pressed");
+        if (speed > 50) {
+            speed -= 1;
+        }
+        api = '/set_speed?speed=' + speed;
+        new Loader(api);
+        writeSpeed(speed);
+    }
 
-    if (command!= 'None'){
-        api = 'http://78.46.205.128:80/command?com=' + command;
+    if (command!= 'None'){        
+        api = '/command?com=' + command;
         new Loader(api);
     }
 
 };
 
 document.onkeyup = function (event) {
-                                 document.getElementById("btn-lstrafe").classList.remove("pressed");
+
+    document.getElementById("btn-lstrafe").classList.remove("pressed");
     document.getElementById("btn-backward").classList.remove("pressed");
     document.getElementById("btn-rstrafe").classList.remove("pressed");
     document.getElementById("btn-lturn").classList.remove("pressed");
     document.getElementById("btn-forward").classList.remove("pressed");
     document.getElementById("btn-rturn").classList.remove("pressed");
+    document.getElementById("btn-activate").classList.remove("pressed");
+    document.getElementById("btn-deactivate").classList.remove("pressed");
+    document.getElementById("btn-plus-speed").classList.remove("pressed");
+    document.getElementById("btn-minus-speed").classList.remove("pressed");
 }
 
 </script>
