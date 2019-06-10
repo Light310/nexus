@@ -8,53 +8,200 @@
 </head>
 <!--<body style="background-image: url({% static "images/background.jpg" %});">-->
 <body class="c_body">
-<div class="buttons">
-    <button class="btn">Act</button>
-    <button class="btn">Forw</button>
-    <button class="btn">DeAct</button>
+<div class="control-button-block">
+    <div id = "btn-lstrafe" class="control-button">&#8592;</div>
+    <div id = "btn-forward" class="control-button">&#8593;</div>
+    <div id = "btn-rstrafe" class="control-button">&#8594;</div>
 </div>
-<div class="buttons">
-    <button class="btn">Left</button>
-    <button class="btn">Bacw</button>
-    <button class="btn">Right</button>
+<div class="control-button-block">
+    <div id = "btn-lturn" class="control-button">&#8630;</div>
+    <div id = "btn-backward" class="control-button">&#8595;</div>
+    <div id = "btn-rturn" class="control-button">&#8631;</div>
 </div>
-
-<div id="id_speed">0</div>
-<div id="id_command">0</div>
-<a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by rawpixel.com - www.freepik.com</a>
 </body>
-</html>
+
 <script>
-var getJSON = function(url, callback) {
-var xhr = new XMLHttpRequest();
-xhr.open('GET', url, true);
-xhr.responseType = 'json';
-xhr.onload = function() {
-  var status = xhr.status;
-  if (status === 200) {
-    callback(null, xhr.response);
-  } else {
-    callback(status, xhr.response);
-  }
-};
-xhr.send();
+var getJSON = function (url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function () {
+        var status = xhr.status;
+        if (status == 200) {
+            callback(null, xhr.response);
+        } else {
+            callback(status);
+        }
+    };
+    xhr.send();
 };
 
-getJSON('http://localhost:8000/speed',
-function(err, data) {
-  if (err !== null) {
-    alert('Something went wrong: ' + err);
-  } else {
-    document.getElementById("id_speed").innerHTML = data['speed'];
-  }
-});
 
-getJSON('http://localhost:8000/command',
-function(err, data) {
-  if (err !== null) {
-    alert('Something went wrong: ' + err);
-  } else {
-    document.getElementById("id_command").innerHTML = data['command'];
+class LoadersManager {
+    constructor() {
+        this.queue = [];
+        this.running_task = undefined;
+    }
+
+    load(loader) {
+        //disableButtons();
+        lm.running_task = loader;
+
+        getJSON(loader.api,
+                function (err, data) {
+                    if (err != null) {
+                        AlertError.render('API ERROR', "Error loading data. Contact administrator. Api: " + api);
+                        console.log('Error : ' + err);
+                    } else {
+                        loader.data = data;
+                        var index = lm.queue.indexOf(loader);
+
+                        if (index > -1) {
+                            lm.queue.splice(index, 1);
+                        }
+
+                        if (loader.result_function != undefined) {
+                            if (loader.function_options != undefined) {
+                                loader.result_function(data, loader.function_options);
+                            } else {
+                                loader.result_function(data);
+                            }
+
+                        }
+
+                        lm.running_task = undefined;
+                        lm.run_next_loader();
+                    }
+                });
+    }
+
+    add_to_queue(loader) {
+        if (this.running_task == undefined) {
+            this.load(loader);
+        } else {
+            this.queue.push(loader);
+        }
+    }
+
+    run_next_loader() {
+        //console.log('Queue length : ' + this.queue.length);
+
+        if (this.queue.length > 0){
+            this.load(this.queue[0]);
+        } else {
+            //enableButtons();
+        }
+    }
+}
+
+lm = new LoadersManager();
+
+class Loader {
+    constructor(api, result_function=undefined, function_options=undefined) {
+        this.is_done = 0;
+        this.api = api;
+        this.result_function = result_function;
+        this.function_options = function_options;
+
+        lm.add_to_queue(this);
+        /*this.elements_for_loading = elements_for_loading;*/
+        //console.log('Created loader. Api : ' + this.api);
+    }
+}
+
+/*
+document.onkeypress = function(event) {
+
+  if (event.which != 0 && event.charCode != 0) { // все кроме IE
+    if (event.which < 32) return null; // спец. символ
+    var ch = String.fromCharCode(event.which)
+    var command = 'None';
+    if (ch == 'q' or ch == 'й') {
+        document.getElementById("btn-lstrafe").classList.add("pressed");
+        command = 'StrafeLeft';
+    }
+    if (ch == 'w') {
+        document.getElementById("btn-forward").classList.add("pressed");
+        command = 'Forward';
+    }
+    if (ch == 'e') {
+        document.getElementById("btn-rstrafe").classList.add("pressed");
+        command = 'StrafeRight';
+    }
+    if (ch == 'a') {
+        document.getElementById("btn-lturn").classList.add("pressed");
+        command = 'TurnLeft';
+    }
+    if (ch == 's') {
+        document.getElementById("btn-backward").classList.add("pressed");
+        command = 'Back';
+    }
+    if (ch == 'd') {
+        document.getElementById("btn-rturn").classList.add("pressed");
+        command = 'TurnRight';
+    }
+
+    if (command!= 'None'){
+        api = 'http://127.0.0.1:8000/command?com=' + command;
+        new Loader(api);
+    }
   }
-});
+};*/
+
+document.onkeydown = function(event) {
+    /*
+    if (event.which == null) { // IE
+    if (event.keyCode < 32) return null; // спец. символ
+    console.log(String.fromCharCode(event.keyCode));
+  }*/
+
+
+    if (event.keyCode < 32) return null; // спец. символ
+    var ch = event.keyCode;
+    var command = 'None';
+
+    if (ch == "Q".charCodeAt(0)) {
+        document.getElementById("btn-lstrafe").classList.add("pressed");
+        command = 'StrafeLeft';
+    }
+    if (ch == "W".charCodeAt(0)) {
+        document.getElementById("btn-forward").classList.add("pressed");
+        command = 'Forward';
+    }
+    if (ch == "E".charCodeAt(0)) {
+        document.getElementById("btn-rstrafe").classList.add("pressed");
+        command = 'StrafeRight';
+    }
+    if (ch == "A".charCodeAt(0)) {
+        document.getElementById("btn-lturn").classList.add("pressed");
+        command = 'TurnLeft';
+    }
+    if (ch == "S".charCodeAt(0)) {
+        document.getElementById("btn-backward").classList.add("pressed");
+        command = 'Back';
+    }
+    if (ch == "D".charCodeAt(0)) {
+        document.getElementById("btn-rturn").classList.add("pressed");
+        command = 'TurnRight';
+    }
+
+    if (command!= 'None'){
+        api = 'http://127.0.0.1:8000/command?com=' + command;
+        new Loader(api);
+    }
+
+};
+
+document.onkeyup = function (event) {
+
+    /*api = 'http://127.0.0.1:8000/command?com=None';
+    new Loader(api);*/
+    document.getElementById("btn-lstrafe").classList.remove("pressed");
+    document.getElementById("btn-backward").classList.remove("pressed");
+    document.getElementById("btn-rstrafe").classList.remove("pressed");
+    document.getElementById("btn-lturn").classList.remove("pressed");
+    document.getElementById("btn-forward").classList.remove("pressed");
+    document.getElementById("btn-rturn").classList.remove("pressed");
+}
+
 </script>
