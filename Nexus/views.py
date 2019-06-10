@@ -21,7 +21,7 @@ def get_speed(request):
 
 def command(request):
     com = request.GET.get('com')
-    file = os.path.join('Nexus', 'files', 'command.txt')
+    file = os.path.join('files', 'command.txt')
 
     try:
         millis = int(round(time.time() * 1000))
@@ -36,15 +36,16 @@ def command(request):
 
 
 def read_command(request):
-    file = os.path.join('Nexus', 'files', 'command.txt')
+    file = os.path.join('files', 'command.txt')
 
     try:
         with open(file) as f:
             data = f.read().split(':')
         millis_prev = int(data[0])
-        command = data[1]
+        command = data[1]             
         millis_cur = int(round(time.time() * 1000))
-        if millis_cur - millis_prev > 300:
+        print(millis_cur-millis_prev)
+        if millis_cur - millis_prev > 500:
             data = 'None'
         else:
             data = command

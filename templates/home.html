@@ -108,53 +108,9 @@ class Loader {
         //console.log('Created loader. Api : ' + this.api);
     }
 }
-
-/*
-document.onkeypress = function(event) {
-
-  if (event.which != 0 && event.charCode != 0) { // все кроме IE
-    if (event.which < 32) return null; // спец. символ
-    var ch = String.fromCharCode(event.which)
-    var command = 'None';
-    if (ch == 'q' or ch == 'й') {
-        document.getElementById("btn-lstrafe").classList.add("pressed");
-        command = 'StrafeLeft';
-    }
-    if (ch == 'w') {
-        document.getElementById("btn-forward").classList.add("pressed");
-        command = 'Forward';
-    }
-    if (ch == 'e') {
-        document.getElementById("btn-rstrafe").classList.add("pressed");
-        command = 'StrafeRight';
-    }
-    if (ch == 'a') {
-        document.getElementById("btn-lturn").classList.add("pressed");
-        command = 'TurnLeft';
-    }
-    if (ch == 's') {
-        document.getElementById("btn-backward").classList.add("pressed");
-        command = 'Back';
-    }
-    if (ch == 'd') {
-        document.getElementById("btn-rturn").classList.add("pressed");
-        command = 'TurnRight';
-    }
-
-    if (command!= 'None'){
-        api = 'http://127.0.0.1:8000/command?com=' + command;
-        new Loader(api);
-    }
-  }
-};*/
+    
 
 document.onkeydown = function(event) {
-    /*
-    if (event.which == null) { // IE
-    if (event.keyCode < 32) return null; // спец. символ
-    console.log(String.fromCharCode(event.keyCode));
-  }*/
-
 
     if (event.keyCode < 32) return null; // спец. символ
     var ch = event.keyCode;
@@ -186,17 +142,14 @@ document.onkeydown = function(event) {
     }
 
     if (command!= 'None'){
-        api = 'http://127.0.0.1:8000/command?com=' + command;
+        api = 'http://78.46.205.128:80/command?com=' + command;
         new Loader(api);
     }
 
 };
 
 document.onkeyup = function (event) {
-
-    /*api = 'http://127.0.0.1:8000/command?com=None';
-    new Loader(api);*/
-    document.getElementById("btn-lstrafe").classList.remove("pressed");
+                                 document.getElementById("btn-lstrafe").classList.remove("pressed");
     document.getElementById("btn-backward").classList.remove("pressed");
     document.getElementById("btn-rstrafe").classList.remove("pressed");
     document.getElementById("btn-lturn").classList.remove("pressed");
