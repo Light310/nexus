@@ -1,0 +1,17 @@
+.c_body {
+background-image: url("../images/background_3.jpg");
+background-size: 100%;
+}
+
+.btn {
+width: 60px;
+height: 60px;
+border: 1px solid blue;
+background-color: #7986cb;
+margin: 2px;
+}
+
+.buttons {
+width: 220px;
+height: 65px;
+}

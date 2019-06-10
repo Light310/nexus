@@ -1,0 +1,60 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus</title>
+</head>
+<!--<body style="background-image: url({% static "images/background.jpg" %});">-->
+<body class="c_body">
+<div class="buttons">
+    <button class="btn">Act</button>
+    <button class="btn">Forw</button>
+    <button class="btn">DeAct</button>
+</div>
+<div class="buttons">
+    <button class="btn">Left</button>
+    <button class="btn">Bacw</button>
+    <button class="btn">Right</button>
+</div>
+
+<div id="id_speed">0</div>
+<div id="id_command">0</div>
+<a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by rawpixel.com - www.freepik.com</a>
+</body>
+</html>
+<script>
+var getJSON = function(url, callback) {
+var xhr = new XMLHttpRequest();
+xhr.open('GET', url, true);
+xhr.responseType = 'json';
+xhr.onload = function() {
+  var status = xhr.status;
+  if (status === 200) {
+    callback(null, xhr.response);
+  } else {
+    callback(status, xhr.response);
+  }
+};
+xhr.send();
+};
+
+getJSON('http://localhost:8000/speed',
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    document.getElementById("id_speed").innerHTML = data['speed'];
+  }
+});
+
+getJSON('http://localhost:8000/command',
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    document.getElementById("id_command").innerHTML = data['command'];
+  }
+});
+</script>
