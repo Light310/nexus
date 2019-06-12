@@ -11,8 +11,9 @@ def home(request):
 
 def set_speed(request):
     speed = request.GET.get('speed')
+    file = os.path.join('files', 'speed.txt')
     try:
-        with open('files/speed.txt', 'w') as f:
+        with open(file, 'w') as f:
             f.write(speed)
         response = json.dumps({'error': False, 'data': 'Ok'}, indent=2)
     except Exception as e:
@@ -21,7 +22,8 @@ def set_speed(request):
     return HttpResponse(response, content_type='application/json')
 
 def get_speed(request):
-    with open('files/speed.txt', 'r') as f:
+    file = os.path.join('files', 'speed.txt')
+    with open(file, 'r') as f:
         speed = f.readline()
     return JsonResponse({'speed': speed})
 

@@ -26,9 +26,22 @@
     <div id = "div-speed" class="control-button speed"></div>
     <div id = "btn-plus-speed" class="control-button">+</div>
 </div>
+<div><img src="/static/images/img.jpg" alt="Video" id="myImage"/></div>
 </body>
 
 <script>
+var myImageElement = document.getElementById('myImage');
+setInterval(function() {    
+    myImageElement.src = '/static/images/img.jpg?' + Math.random();
+}, 600);
+
+function getMillis() {
+    var dttm = new Date();
+    return dttm.getSeconds()*1000 + dttm.getMilliseconds();
+}
+var last_request_dttm = getMillis();
+var last_request = '';
+
 var speed = 0;
 function writeSpeed(speed) {
     document.getElementById('div-speed').innerHTML = speed;
@@ -127,9 +140,14 @@ class Loader {
         this.result_function = result_function;
         this.function_options = function_options;
 
-        lm.add_to_queue(this);
-        /*this.elements_for_loading = elements_for_loading;*/
-        //console.log('Created loader. Api : ' + this.api);
+        if (api == last_request && getMillis() - last_request_dttm < 700) {
+            // that is anti-spam, ignoring same commands
+            delete this;
+        } else {
+            last_request_dttm = getMillis();
+            last_request = api;
+            lm.add_to_queue(this);
+        }
     }
 }
 
@@ -182,7 +200,7 @@ document.onkeydown = function(event) {
     }
     if (ch == 109) { // - sign
         document.getElementById("btn-minus-speed").classList.add("pressed");
-        if (speed > 50) {
+        if (speed > 90) {
             speed -= 1;
         }
         api = '/set_speed?speed=' + speed;
