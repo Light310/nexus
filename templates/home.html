@@ -9,31 +9,65 @@
 </head>
 <!--<body style="background-image: url({% static "images/background.jpg" %});">-->
 <body class="c_body">
-<div class="control-button-block">
+<div class="block control-1">
     <div id = "btn-lstrafe" class="control-button">&#8592;</div>
     <div id = "btn-forward" class="control-button">&#8593;</div>
     <div id = "btn-rstrafe" class="control-button">&#8594;</div>
-    <div id = "btn-activate" class="control-button button-text">Act (T)</div>
-</div>
-<div class="control-button-block">
     <div id = "btn-lturn" class="control-button">&#8630;</div>
     <div id = "btn-backward" class="control-button">&#8595;</div>
     <div id = "btn-rturn" class="control-button">&#8631;</div>
-    <div id = "btn-deactivate" class="control-button button-text">DeAct (G)</div>
 </div>
-<div class="control-button-block">
+<div class="block control-2">
+    <div id = "btn-lforw" class="control-button">&#8598;</div>
+    <div id = "btn-rforw" class="control-button">&#8599;</div>
+    <div id = "btn-lbackw" class="control-button">&#8601;</div>
+    <div id = "btn-rbackw" class="control-button">&#8600;</div>
+</div>
+<div class="block activation-speed">
+    <div id = "btn-activate" class="control-button button-text">Act (Y)</div>
+    <div id = "btn-deactivate" class="control-button button-text">DeAct (U)</div>
+    <div id = "btn-exit" class="control-button button-text">Exit (I)</div>
     <div id = "btn-minus-speed" class="control-button">-</div>
-    <div id = "div-speed" class="control-button speed"></div>
+    <div id = "div-speed" class="control-button"></div>
     <div id = "btn-plus-speed" class="control-button">+</div>
 </div>
-<div><img src="/static/images/img.jpg" alt="Video" id="myImage"/></div>
+<div class="block supply">
+    <div class="simple-div">
+        <div style="vertical-align: middle;display: inline-block;"><img class="image-battery" src="/static/images/battery_image.png"></div>
+    <div style="vertical-align: middle;clear: none;display: inline-block;margin: 0px 5px;width: 40px;">PI</div>
+        <div style="display: inline-block;">4.2V / 100%</div>
+    </div>
+    <div class="simple-div">
+        <div style="vertical-align: middle;display: inline-block;"><img class="image-battery" src="/static/images/battery_image.png"></div>
+    <div style="vertical-align: middle;clear: none;display: inline-block;margin: 0px 5px;width: 40px;">Servo</div>
+        <div style="display: inline-block;">8.0V / 93%</div>
+    </div>
+</div>
+<div class="block gyroaccel">
+    <div class="gyro-middle-block">
+        <div class="gyro-inner-block">X</div>
+        <div class="gyro-inner-block">90</div>
+    </div>
+    <div class="gyro-middle-block">
+        <div class="gyro-inner-block">Y</div>
+        <div class="gyro-inner-block">70</div>
+    </div>
+    <div class="gyro-middle-block">
+        <div class="gyro-inner-block">Z</div>
+        <div class="gyro-inner-block">30</div>
+    </div>
+</div>
+
+
+<div class="div-image-holder"><img class="image-src" src="/static/images/img.jpg" alt="Video" id="myImage"/></div>
 </body>
 
 <script>
 var myImageElement = document.getElementById('myImage');
-setInterval(function() {    
-    myImageElement.src = '/static/images/img.jpg?' + Math.random();
-}, 600);
+
+//setInterval(function() {    
+//    myImageElement.src = '/static/images/img.jpg?' + Math.random();
+//}, 350);
 
 function getMillis() {
     var dttm = new Date();
@@ -161,35 +195,56 @@ document.onkeydown = function(event) {
         document.getElementById("btn-lstrafe").classList.add("pressed");
         command = 'StrafeLeft';
     }
-    if (ch == "W".charCodeAt(0)) {
+    else if (ch == "W".charCodeAt(0)) {
         document.getElementById("btn-forward").classList.add("pressed");
         command = 'Forward';
     }
-    if (ch == "E".charCodeAt(0)) {
+    else if (ch == "E".charCodeAt(0)) {
         document.getElementById("btn-rstrafe").classList.add("pressed");
         command = 'StrafeRight';
     }
-    if (ch == "A".charCodeAt(0)) {
+    else if (ch == "A".charCodeAt(0)) {
         document.getElementById("btn-lturn").classList.add("pressed");
         command = 'TurnLeft';
     }
-    if (ch == "S".charCodeAt(0)) {
+    else if (ch == "S".charCodeAt(0)) {
         document.getElementById("btn-backward").classList.add("pressed");
         command = 'Back';
     }
-    if (ch == "D".charCodeAt(0)) {
+    else if (ch == "D".charCodeAt(0)) {
         document.getElementById("btn-rturn").classList.add("pressed");
         command = 'TurnRight';
     }
-    if (ch == "T".charCodeAt(0)) {
+    else if (ch == "R".charCodeAt(0)) {
+        document.getElementById("btn-lforw").classList.add("pressed");
+        command = 'LeftForward';
+    }
+    else if (ch == "T".charCodeAt(0)) {
+        document.getElementById("btn-rforw").classList.add("pressed");
+        command = 'RightForward';
+    }
+    else if (ch == "F".charCodeAt(0)) {
+        document.getElementById("btn-lbackw").classList.add("pressed");
+        command = 'LeftBackwards';
+    }
+    else if (ch == "G".charCodeAt(0)) {
+        document.getElementById("btn-rbackw").classList.add("pressed");
+        command = 'RightBackwards';
+    }
+    else if (ch == "Y".charCodeAt(0)) {
         document.getElementById("btn-activate").classList.add("pressed");
         command = 'Activate';
     }
-    if (ch == "G".charCodeAt(0)) {
+    else if (ch == "U".charCodeAt(0)) {
         document.getElementById("btn-deactivate").classList.add("pressed");
         command = 'Deactivate';
     }
-    if (ch == 107) { // + sign
+    else if (ch == "I".charCodeAt(0)) {
+        document.getElementById("btn-exit").classList.add("pressed");
+        command = 'Exit';
+    }
+
+    else if (ch == 107) { // + sign
         document.getElementById("btn-plus-speed").classList.add("pressed");
         if (speed < 100) {
             speed += 1;
@@ -198,7 +253,7 @@ document.onkeydown = function(event) {
         new Loader(api);
         writeSpeed(speed);
     }
-    if (ch == 109) { // - sign
+    else if (ch == 109) { // - sign
         document.getElementById("btn-minus-speed").classList.add("pressed");
         if (speed > 90) {
             speed -= 1;
@@ -223,8 +278,13 @@ document.onkeyup = function (event) {
     document.getElementById("btn-lturn").classList.remove("pressed");
     document.getElementById("btn-forward").classList.remove("pressed");
     document.getElementById("btn-rturn").classList.remove("pressed");
+    document.getElementById("btn-lforw").classList.remove("pressed");
+    document.getElementById("btn-rforw").classList.remove("pressed");
+    document.getElementById("btn-lbackw").classList.remove("pressed");
+    document.getElementById("btn-rbackw").classList.remove("pressed");
     document.getElementById("btn-activate").classList.remove("pressed");
     document.getElementById("btn-deactivate").classList.remove("pressed");
+    document.getElementById("btn-exit").classList.remove("pressed");
     document.getElementById("btn-plus-speed").classList.remove("pressed");
     document.getElementById("btn-minus-speed").classList.remove("pressed");
 }
