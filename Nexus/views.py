@@ -6,8 +6,10 @@ from django.http import JsonResponse, HttpResponse
 
 
 def home(request):
-    return render(request, 'templates/home.html', {})
+    return render(request, 'templates/home.html', {})       
 
+def view_stream(request):
+    return render(request, 'templates/view-stream.html', {})
 
 def set_speed(request):
     speed = request.GET.get('speed')
@@ -58,6 +60,44 @@ def read_command(request):
             data = command
         print('Read command : {0}'.format(data))
         response = json.dumps({'error': False, 'data': data}, indent=2)
+    except Exception as e:
+        response = json.dumps({'error': True, 'message': str(e)}, indent=2)
+
+    return HttpResponse(response, content_type='application/json')
+
+
+def get_batteries_values(request):
+    file = os.path.join('files', 'batteries.txt')
+
+    try:
+        with open(file) as f:
+            data = f.read().split(':')
+        millis_prev = int(data[0])                       
+        millis_cur = int(round(time.time() * 1000))
+        if millis_cur - millis_prev > 1000:
+            pi, pi_pct, servo, servo_pct = 0.0, 0.0, 0.0, 0.0
+        else:
+            pi, pi_pct, servo, servo_pct = data[1].split(',')
+        response = json.dumps({'error': False, 'pi': pi, 'pi_pct': pi_pct, 'servo': servo, 'servo_pct': servo_pct}, indent=2)
+    except Exception as e:
+        response = json.dumps({'error': True, 'message': str(e)}, indent=2)
+
+    return HttpResponse(response, content_type='application/json')
+
+
+def get_gyroaccel_data(request):
+    file = os.path.join('files', 'gyroaccel.txt')
+
+    try:
+        with open(file) as f:
+            data = f.read().split(':')
+        millis_prev = int(data[0])
+        millis_cur = int(round(time.time() * 1000))
+        if millis_cur - millis_prev > 1000:
+            x, y, z = 0.0, 0.0, 0.0
+        else:
+            x, y, z = data[1].split(',')
+        response = json.dumps({'error': False, 'x': x, 'y': y, 'z': z}, indent=2)
     except Exception as e:
         response = json.dumps({'error': True, 'message': str(e)}, indent=2)
 

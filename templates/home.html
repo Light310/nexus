@@ -1,5 +1,6 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+<link rel="stylesheet" type="text/javascript" src="{% static 'js/jsmpeg/src/jsmpeg.js' %}">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,65 +10,122 @@
 </head>
 <!--<body style="background-image: url({% static "images/background.jpg" %});">-->
 <body class="c_body">
-<div class="block control-1">
+<div class="all-blocks">
+  <div class="block control-1">
     <div id = "btn-lstrafe" class="control-button">&#8592;</div>
     <div id = "btn-forward" class="control-button">&#8593;</div>
     <div id = "btn-rstrafe" class="control-button">&#8594;</div>
     <div id = "btn-lturn" class="control-button">&#8630;</div>
     <div id = "btn-backward" class="control-button">&#8595;</div>
     <div id = "btn-rturn" class="control-button">&#8631;</div>
-</div>
-<div class="block control-2">
+  </div>
+  <div class="block control-2">
     <div id = "btn-lforw" class="control-button">&#8598;</div>
     <div id = "btn-rforw" class="control-button">&#8599;</div>
     <div id = "btn-lbackw" class="control-button">&#8601;</div>
     <div id = "btn-rbackw" class="control-button">&#8600;</div>
-</div>
-<div class="block activation-speed">
+  </div>
+  <div class="block activation-speed">
     <div id = "btn-activate" class="control-button button-text">Act (Y)</div>
     <div id = "btn-deactivate" class="control-button button-text">DeAct (U)</div>
     <div id = "btn-exit" class="control-button button-text">Exit (I)</div>
     <div id = "btn-minus-speed" class="control-button">-</div>
     <div id = "div-speed" class="control-button"></div>
     <div id = "btn-plus-speed" class="control-button">+</div>
-</div>
-<div class="block supply">
+  </div>
+  <div class="block supply">
     <div class="simple-div">
         <div style="vertical-align: middle;display: inline-block;"><img class="image-battery" src="/static/images/battery_image.png"></div>
-    <div style="vertical-align: middle;clear: none;display: inline-block;margin: 0px 5px;width: 40px;">PI</div>
-        <div style="display: inline-block;">4.2V / 100%</div>
+        <div style="vertical-align: middle;clear: none;display: inline-block;margin: 0px 5px;width: 40px;">PI</div>
+        <div style="display: inline-block;" id="pi-battery">0V / 0%</div>
     </div>
     <div class="simple-div">
         <div style="vertical-align: middle;display: inline-block;"><img class="image-battery" src="/static/images/battery_image.png"></div>
-    <div style="vertical-align: middle;clear: none;display: inline-block;margin: 0px 5px;width: 40px;">Servo</div>
-        <div style="display: inline-block;">8.0V / 93%</div>
+        <div style="vertical-align: middle;clear: none;display: inline-block;margin: 0px 5px;width: 40px;">Servo</div>
+        <div style="display: inline-block;" id="servo-battery">0V / 0%</div>
     </div>
-</div>
-<div class="block gyroaccel">
+  </div>
+  <div class="block gyroaccel">
     <div class="gyro-middle-block">
         <div class="gyro-inner-block">X</div>
-        <div class="gyro-inner-block">90</div>
+        <div class="gyro-inner-block" id="gyro-x">0</div>
     </div>
     <div class="gyro-middle-block">
         <div class="gyro-inner-block">Y</div>
-        <div class="gyro-inner-block">70</div>
+        <div class="gyro-inner-block" id="gyro-y">0</div>
     </div>
     <div class="gyro-middle-block">
         <div class="gyro-inner-block">Z</div>
-        <div class="gyro-inner-block">30</div>
+        <div class="gyro-inner-block" id="gyro-z">0</div>
     </div>
+  </div>
+</div>
+<div class="div-image-holder">
+  <canvas id="video-canvas" class="image-src" width="640" height="480">
+    <p>
+    Please use a browser that supports the Canvas Element, like
+    <a href="http://www.google.com/chrome">Chrome</a>,
+    <a href="http://www.mozilla.com/firefox/">Firefox</a>,
+    <a href="http://www.apple.com/safari/">Safari</a> or Internet Explorer 10
+    </p>
+  </canvas>
 </div>
 
-
-<div class="div-image-holder"><img class="image-src" src="/static/images/img.jpg" alt="Video" id="myImage"/></div>
+<div style="display:none" class="div-image-holder"><img class="image-src" src="/static/images/img.jpg" alt="Video" id="myImage"/></div>
 </body>
 
+
+	<script type="text/javascript" src="{% static 'js/jsmpeg/jsmpeg.min.js' %}"></script>
+		<script type="text/javascript">
+		var canvas = document.getElementById('video-canvas');
+		var url = 'ws://'+document.location.hostname+':8082/';
+		var player = new JSMpeg.Player(url, {canvas: canvas});
+	</script>
 <script>
 var myImageElement = document.getElementById('myImage');
 
-//setInterval(function() {    
-//    myImageElement.src = '/static/images/img.jpg?' + Math.random();
-//}, 350);
+
+function update_batteries() {
+  fetch('/get_batteries_values')
+    .then(response => response.json())
+    .then(data => {
+        pi = data['pi'];
+        pi_pct = data['pi_pct'];
+        servo = data['servo'];
+        servo_pct = data['servo_pct'];
+        document.getElementById('pi-battery').innerHTML = pi+'V / '+pi_pct+'%';
+        document.getElementById('servo-battery').innerHTML = servo+'V / '+servo_pct+'%';
+    })
+    .catch(err => {
+        console.error('An error ocurred', err);
+    });
+}
+
+setInterval(function() {    
+    update_batteries();
+}, 3000);
+
+
+function update_gyroaccel() {
+  fetch('/get_gyroaccel_data')
+    .then(response => response.json())
+    .then(data => {
+        x = data['x'];
+        y = data['y'];
+        z = data['z'];
+        document.getElementById('gyro-x').innerHTML = x;
+        document.getElementById('gyro-y').innerHTML = y;
+        document.getElementById('gyro-z').innerHTML = z;
+    })
+    .catch(err => {
+        console.error('An error ocurred', err);
+    });
+}
+
+setInterval(function() {    
+    update_gyroaccel();
+}, 200);
+
 
 function getMillis() {
     var dttm = new Date();

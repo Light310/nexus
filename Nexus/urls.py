@@ -20,8 +20,11 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
+    path('view-stream/', views.view_stream),
     path('get_speed', views.get_speed),
     path('set_speed', views.set_speed),
+    path('get_batteries_values', views.get_batteries_values),
+    path('get_gyroaccel_data', views.get_gyroaccel_data),       
     path('command', views.command),
     path('read_command', views.read_command),
 ]
