@@ -6,6 +6,8 @@ import os
 
 
 def convert_to_perc(value):
+    if abs(value) < 0.01:
+        return 0   
     return round((value - 3.4)/(4.2 - 3.4)*100, 2)
 
 
