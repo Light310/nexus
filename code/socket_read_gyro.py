@@ -18,16 +18,19 @@ while True:
         with conn:
             print('Connected by', addr)
             while True:
-                data = conn.recv(1024)
-                if data == b'':
-                    break
-                spl = data.decode("utf-8").split(',')
+                try:
+                    data = conn.recv(1024)
+                    if data == b'':
+                        break
+                    spl = data.decode("utf-8").split(',')
                 
-                x, y, z = float(spl[0]), float(spl[1]), float(spl[2])
-                millis = int(round(time.time() * 1000))
-                data_for_file = f'{millis}:{x},{y},{z}'
-                with open(file, 'w') as f:
-                     f.write(f'{data_for_file}')
-                print('Received ', x, y, z)
+                    x, y, z = float(spl[0]), float(spl[1]), float(spl[2])
+                    millis = int(round(time.time() * 1000))
+                    data_for_file = f'{millis}:{x},{y},{z}'
+                    with open(file, 'w') as f:
+                        f.write(f'{data_for_file}')
+                    print('Received ', x, y, z)
+                except Exception as e:
+                    print(f'Got exception:\n{str(e)}\nAborting iteration')
         print('Connection closed')
         

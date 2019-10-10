@@ -24,16 +24,19 @@ while True:
         with conn:
             print('Connected by', addr)
             while True:
-                data = conn.recv(1024)
-                if data == b'':
-                    break
-                spl = data.decode("utf-8").split(',')
-                print(spl)
-                pi, servo = float(spl[0]), float(spl[1])
-                millis = int(round(time.time() * 1000))
-                data_for_file = f'{millis}:{pi},{convert_to_perc(pi)},{servo},{convert_to_perc(servo)}'
-                with open(file, 'w') as f:
-                     f.write(f'{data_for_file}')
-                print('Received ', pi, convert_to_perc(pi), servo, convert_to_perc(servo))
+                try:
+                    data = conn.recv(1024)
+                    if data == b'':
+                        break
+                    spl = data.decode("utf-8").split(',')
+                    print(spl)
+                    pi, servo = float(spl[0]), float(spl[1])
+                    millis = int(round(time.time() * 1000))
+                    data_for_file = f'{millis}:{pi},{convert_to_perc(pi)},{servo},{convert_to_perc(servo)}'
+                    with open(file, 'w') as f:
+                        f.write(f'{data_for_file}')
+                    print('Received ', pi, convert_to_perc(pi), servo, convert_to_perc(servo))
+                except Exception as e: 
+                    print(f'Got exception:\n{str(e)}\nAborting iteration')
         print('Connection closed')
         
