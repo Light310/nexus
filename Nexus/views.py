@@ -46,7 +46,7 @@ def command(request):
 
 
 def read_command(request):
-    file = os.path.join('files', 'command.txt')
+    file = '/nexus/files/command.txt'
 
     try:
         with open(file) as f:

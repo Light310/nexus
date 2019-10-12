@@ -11,6 +11,7 @@
 <!--<body style="background-image: url({% static "images/background.jpg" %});">-->
 <body class="c_body">
 <div class="all-blocks">
+  <!--
   <div class="block control-1">
     <div id = "btn-lstrafe" class="control-button">&#8592;</div>
     <div id = "btn-forward" class="control-button">&#8593;</div>
@@ -24,11 +25,11 @@
     <div id = "btn-rforw" class="control-button">&#8599;</div>
     <div id = "btn-lbackw" class="control-button">&#8601;</div>
     <div id = "btn-rbackw" class="control-button">&#8600;</div>
-  </div>
+  </div>-->
   <div class="block activation-speed">
-    <div id = "btn-activate" class="control-button button-text">Act (Y)</div>
-    <div id = "btn-deactivate" class="control-button button-text">DeAct (U)</div>
-    <div id = "btn-exit" class="control-button button-text">Exit (I)</div>
+    <div id = "btn-activate" class="control-button button-text">On (Y)</div>
+    <div id = "btn-deactivate" class="control-button button-text">Off (U)</div>
+    <div id = "btn-exit" class="control-button button-text">Quit (I)</div>
     <div id = "btn-minus-speed" class="control-button">-</div>
     <div id = "div-speed" class="control-button"></div>
     <div id = "btn-plus-speed" class="control-button">+</div>
@@ -61,7 +62,7 @@
   </div>
 </div>
 <div class="div-image-holder">
-  <canvas id="video-canvas" class="image-src" width="640" height="480">
+  <canvas id="video-canvas" class="image-src" width="1024" height="576">
     <p>
     Please use a browser that supports the Canvas Element, like
     <a href="http://www.google.com/chrome">Chrome</a>,
@@ -329,7 +330,7 @@ document.onkeydown = function(event) {
 };
 
 document.onkeyup = function (event) {
-
+    /*
     document.getElementById("btn-lstrafe").classList.remove("pressed");
     document.getElementById("btn-backward").classList.remove("pressed");
     document.getElementById("btn-rstrafe").classList.remove("pressed");
@@ -339,7 +340,7 @@ document.onkeyup = function (event) {
     document.getElementById("btn-lforw").classList.remove("pressed");
     document.getElementById("btn-rforw").classList.remove("pressed");
     document.getElementById("btn-lbackw").classList.remove("pressed");
-    document.getElementById("btn-rbackw").classList.remove("pressed");
+    document.getElementById("btn-rbackw").classList.remove("pressed");*/
     document.getElementById("btn-activate").classList.remove("pressed");
     document.getElementById("btn-deactivate").classList.remove("pressed");
     document.getElementById("btn-exit").classList.remove("pressed");
