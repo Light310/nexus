@@ -1,0 +1,1205 @@
+Listening for incomming MPEG-TS Stream on http://127.0.0.1:8081/<secret>
+Awaiting WebSocket connections on ws://127.0.0.1:8082/
+New WebSocket Connection:  ::ffff:46.242.8.221 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 (1 total)
+Stream Connected: ::ffff:46.242.8.221:1293
+Connected by ('46.242.8.221', 1337)
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.51', '0.06']
+Received  3.51 13.75 0.06 -417.5
+['3.5', '0.06']
+Received  3.5 12.5 0.06 -417.5
+['3.5', '0.06']
+Received  3.5 12.5 0.06 -417.5
+['3.5', '0.06']
+Received  3.5 12.5 0.06 -417.5
+['3.5', '0.06']
+Received  3.5 12.5 0.06 -417.5
+['3.5', '0.06']
+Received  3.5 12.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+Connection closed
+Connected by ('46.242.8.221', 1358)
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.57', '0.06']
+Received  3.57 21.25 0.06 -417.5
+['3.57', '0.06']
+Received  3.57 21.25 0.06 -417.5
+['3.57', '0.06']
+Received  3.57 21.25 0.06 -417.5
+['3.57', '0.06']
+Received  3.57 21.25 0.06 -417.5
+['3.57', '0.06']
+Received  3.57 21.25 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.56', '0.06']
+Received  3.56 20.0 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.54', '0.06']
+Received  3.54 17.5 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']
+Received  3.53 16.25 0.06 -417.5
+['3.53', '0.06']Disconnected WebSocket (0 total)
+New WebSocket Connection:  ::ffff:46.242.8.221 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 (1 total)
+Traceback (most recent call last):
+  File "/nexus/code/socket_read_batteries.py", line 21, in <module>
+    s.bind((HOST, PORT))                                            
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/nexus/code/socket_read_gyro.py", line 15, in <module>
+    s.bind((HOST, PORT))                                            
+OSError: [Errno 98] Address already in use
+Listening for incomming MPEG-TS Stream on http://127.0.0.1:8081/<secret>
+Awaiting WebSocket connections on ws://127.0.0.1:8082/
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::8082
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at Server.listen (net.js:1480:7)
+    at new WebSocketServer (/nexus/static/js/jsmpeg/node_modules/ws/lib/websocket-server.js:74:20)
+    at Object.<anonymous> (/nexus/static/js/jsmpeg/websocket-relay.js:25:20)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+Stream Connected: ::ffff:46.242.8.221:1281
+Traceback (most recent call last):
+  File "/nexus/code/socket_read_gyro.py", line 15, in <module>
+    s.bind((HOST, PORT))                                            
+OSError: [Errno 98] Address already in use
+Listening for incomming MPEG-TS Stream on http://127.0.0.1:8081/<secret>
+Awaiting WebSocket connections on ws://127.0.0.1:8082/
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::8082
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at Server.listen (net.js:1480:7)
+    at new WebSocketServer (/nexus/static/js/jsmpeg/node_modules/ws/lib/websocket-server.js:74:20)
+    at Object.<anonymous> (/nexus/static/js/jsmpeg/websocket-relay.js:25:20)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+Disconnected WebSocket (0 total)
+New WebSocket Connection:  ::ffff:46.242.8.221 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 (1 total)
+Disconnected WebSocket (0 total)
+Failed Stream Connection: ::ffff:113.200.71.106:55082 - wrong secret.
+Stream Connected: ::ffff:113.200.71.106:55082
+close
+Failed Stream Connection: undefined:undefined - wrong secret.
+Stream Connected: undefined:undefined
+close
+Failed Stream Connection: ::ffff:117.14.112.110:45334 - wrong secret.
+Stream Connected: ::ffff:117.14.112.110:45334
+close
+Failed Stream Connection: undefined:undefined - wrong secret.
+Stream Connected: undefined:undefined
+close
+Failed Stream Connection: ::ffff:58.248.203.211:45818 - wrong secret.
+Stream Connected: ::ffff:58.248.203.211:45818
+close
+Failed Stream Connection: undefined:undefined - wrong secret.
+Stream Connected: undefined:undefined
+close
+Failed Stream Connection: ::ffff:171.12.10.52:45948 - wrong secret.
+Stream Connected: ::ffff:171.12.10.52:45948
+close
+Failed Stream Connection: ::ffff:182.88.77.130:44034 - wrong secret.
+Stream Connected: ::ffff:182.88.77.130:44034
+close
+Failed Stream Connection: undefined:undefined - wrong secret.
+Stream Connected: undefined:undefined
+close
+Failed Stream Connection: ::ffff:110.177.74.179:47492 - wrong secret.
+Stream Connected: ::ffff:110.177.74.179:47492
+close
+Failed Stream Connection: undefined:undefined - wrong secret.
+Stream Connected: undefined:undefined
+close
+Failed Stream Connection: undefined:undefined - wrong secret.
+Stream Connected: undefined:undefined
+close
+Failed Stream Connection: undefined:undefined - wrong secret.
+Stream Connected: undefined:undefined
+close
+Failed Stream Connection: ::ffff:121.57.231.245:47680 - wrong secret.
+Stream Connected: ::ffff:121.57.231.245:47680
+close
+Failed Stream Connection: ::ffff:27.224.137.98:47698 - wrong secret.
+Stream Connected: ::ffff:27.224.137.98:47698
+close
+Failed Stream Connection: ::ffff:77.247.110.222:51741 - wrong secret.
+Stream Connected: ::ffff:77.247.110.222:51741
+close
+Failed Stream Connection: ::ffff:31.150.213.93:53783 - wrong secret.
+Stream Connected: ::ffff:31.150.213.93:53783
+close
+Failed Stream Connection: ::ffff:37.46.134.99:40884 - wrong secret.
+Stream Connected: ::ffff:37.46.134.99:40884
+close
+Failed Stream Connection: ::ffff:77.247.110.240:54250 - wrong secret.
+Stream Connected: ::ffff:77.247.110.240:54250
+close
+Failed Stream Connection: ::ffff:167.114.227.94:56849 - wrong secret.
+Stream Connected: ::ffff:167.114.227.94:56849
+close
+Failed Stream Connection: ::ffff:77.247.110.222:62425 - wrong secret.
+Stream Connected: ::ffff:77.247.110.222:62425
+close
+Failed Stream Connection: ::ffff:190.19.252.215:40682 - wrong secret.
+Stream Connected: ::ffff:190.19.252.215:40682
+close
+Failed Stream Connection: ::ffff:101.116.12.64:55894 - wrong secret.
+Stream Connected: ::ffff:101.116.12.64:55894
+close
+Failed Stream Connection: ::ffff:130.255.57.199:39803 - wrong secret.
+Stream Connected: ::ffff:130.255.57.199:39803
+close
+Failed Stream Connection: ::ffff:139.99.6.78:58057 - wrong secret.
+Stream Connected: ::ffff:139.99.6.78:58057
+close
+Failed Stream Connection: ::ffff:77.247.110.240:55683 - wrong secret.
+Stream Connected: ::ffff:77.247.110.240:55683
+close
+Failed Stream Connection: ::ffff:185.194.6.93:38662 - wrong secret.
+Stream Connected: ::ffff:185.194.6.93:38662
+close
+Failed Stream Connection: ::ffff:198.108.66.64:49534 - wrong secret.
+Stream Connected: ::ffff:198.108.66.64:49534
+close
+Failed Stream Connection: ::ffff:159.148.98.242:38837 - wrong secret.
+Stream Connected: ::ffff:159.148.98.242:38837
+close
+Failed Stream Connection: ::ffff:77.247.110.222:64952 - wrong secret.
+Stream Connected: ::ffff:77.247.110.222:64952
+close
+New WebSocket Connection:  ::ffff:46.242.8.221 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 (1 total)
+Connected by ('46.242.8.221', 11852)
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.48', '3.66']
+Received  3.48 10.0 3.66 32.5
+['3.48', '3.66']
+Received  3.48 10.0 3.66 32.5
+['3.48', '3.66']
+Received  3.48 10.0 3.66 32.5
+['3.48', '3.66']
+Received  3.48 10.0 3.66 32.5
+['3.48', '3.66']
+Received  3.48 10.0 3.66 32.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+Connection closed
+Connected by ('46.242.8.221', 8049)
+['3.48', '0.0']
+Received  3.48 10.0 0.0 0
+['3.48', '0.0']
+Received  3.48 10.0 0.0 0
+['3.48', '0.0']
+Received  3.48 10.0 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.45', '0.0']
+Received  3.45 6.25 0.0 0
+['3.45', '0.0']
+Received  3.45 6.25 0.0 0
+['3.45', '0.0']
+Received  3.45 6.25 0.0 0
+['3.45', '0.0']
+Received  3.45 6.25 0.0 0
+['3.45', '0.0']
+Received  3.45 6.25 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.46', '0.0']
+Received  3.46 7.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '0.0']
+Received  3.5 12.5 0.0 0
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.51', '3.65']
+Received  3.51 13.75 3.65 31.25
+['3.51', '3.65']
+Received  3.51 13.75 3.65 31.25
+['3.51', '3.65']
+Received  3.51 13.75 3.65 31.25
+['3.51', '3.65']
+Received  3.51 13.75 3.65 31.25
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.48', '3.6']
+Received  3.48 10.0 3.6 25.0
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.46', '3.6']
+Received  3.46 7.5 3.6 25.0
+['3.46', '3.6']
+Received  3.46 7.5 3.6 25.0
+['3.46', '3.6']
+Received  3.46 7.5 3.6 25.0
+['3.46', '3.6']
+Received  3.46 7.5 3.6 25.0
+['3.46', '3.6']
+Received  3.46 7.5 3.6 25.0
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+Connection closed
+Connected by ('46.242.8.221', 11409)
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.46', '3.63']
+Received  3.46 7.5 3.63 28.75
+['3.46', '3.63']
+Received  3.46 7.5 3.63 28.75
+['3.46', '3.63']
+Received  3.46 7.5 3.63 28.75
+['3.46', '3.63']
+Received  3.46 7.5 3.63 28.75
+['3.46', '3.63']
+Received  3.46 7.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.42', '3.62']
+Received  3.42 2.5 3.62 27.5
+['3.42', '3.62']
+Received  3.42 2.5 3.62 27.5
+['3.42', '3.62']
+Received  3.42 2.5 3.62 27.5
+['3.42', '3.62']
+Received  3.42 2.5 3.62 27.5
+['3.48', '3.58']
+Received  3.48 10.0 3.58 22.5
+['3.48', '3.58']
+Received  3.48 10.0 3.58 22.5
+['3.48', '3.58']
+Received  3.48 10.0 3.58 22.5
+['3.48', '3.58']
+Received  3.48 10.0 3.58 22.5
+['3.48', '3.58']
+Received  3.48 10.0 3.58 22.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+Connection closed
+Connected by ('46.242.8.221', 11420)
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.45', '3.62']
+Received  3.45 6.25 3.62 27.5
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.46', '3.65']
+Received  3.46 7.5 3.65 31.25
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.5', '3.62']
+Received  3.5 12.5 3.62 27.5
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.45', '3.63']
+Received  3.45 6.25 3.63 28.75
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.62']
+Received  3.48 10.0 3.62 27.5
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.48', '3.63']
+Received  3.48 10.0 3.63 28.75
+['3.45', '3.65']
+Received  3.45 6.25 3.65 31.25
+['3.45', '3.65']
+Received  3.45 6.25 3.65 31.25
+['3.45', '3.65']
+Received  3.45 6.25 3.65 31.25
+['3.45', '3.65']
+Received  3.45 6.25 3.65 31.25
+['3.45', '3.65']
+Received  3.45 6.25 3.65 31.25
+['3.48', '3.65']
+Received  3.48 10.0 3.65 31.25
+['3.48', '3.65']
+Received  3.48 10.0 3.65 31.25
+['3.48', '3.65']
+Received  3.48 10.0 3.65 31.25
+['3.48', '3.65']
+Received  3.48 10.0 3.65 31.25
+['3.48', '3.65']
+Received  3.48 10.0 3.65 31.25
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.5', '3.63']
+Received  3.5 12.5 3.63 28.75
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+Connection closed
+Connected by ('46.242.8.221', 11436)
+['3.46', '3.62']
+Received  3.46 7.5 3.62 27.5
+['3.46', '3.623.46', '3.62']
+Traceback (most recent call last):
+  File "/nexus/code/socket_read_batteries.py", line 32, in <module>
+    pi, servo = float(spl[0]), float(spl[1])
+ValueError: could not convert string to float: '3.623.46'
+Disconnected WebSocket (0 total)
+Listening for incomming MPEG-TS Stream on http://127.0.0.1:8081/<secret>
+Awaiting WebSocket connections on ws://127.0.0.1:8082/
+Traceback (most recent call last):
+  File "/nexus/code/socket_read_batteries.py", line 21, in <module>
+    s.bind((HOST, PORT))                                            
+OSError: [Errno 98] Address already in use
+Listening for incomming MPEG-TS Stream on http://127.0.0.1:8081/<secret>
+Awaiting WebSocket connections on ws://127.0.0.1:8082/
+Traceback (most recent call last):
+  File "/nexus/code/socket_read_batteries.py", line 21, in <module>
+    s.bind((HOST, PORT))                                            
+OSError: [Errno 98] Address already in use
+Listening for incomming MPEG-TS Stream on http://127.0.0.1:8081/<secret>
+Awaiting WebSocket connections on ws://127.0.0.1:8082/
