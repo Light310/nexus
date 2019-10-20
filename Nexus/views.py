@@ -66,6 +66,25 @@ def read_command(request):
     return HttpResponse(response, content_type='application/json')
 
 
+def get_fenix_data(request):
+    file = os.path.join('files', 'data.txt')
+
+    try:
+        with open(file) as f:
+            file_data = json.loads(f.read())
+        millis_prev = int(file_data['millis'])                       
+        millis_cur = int(round(time.time() * 1000))
+        data = file_data['data']
+        if millis_cur - millis_prev > 1000:
+            for k in data:
+                data[k] = 0.0
+        response = json.dumps({'error': False, 'data': data}, indent=2)
+    except Exception as e:
+        response = json.dumps({'error': True, 'message': str(e)}, indent=2)
+
+    return HttpResponse(response, content_type='application/json')
+
+
 def get_batteries_values(request):
     file = os.path.join('files', 'batteries.txt')
 

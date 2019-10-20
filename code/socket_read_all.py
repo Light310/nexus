@@ -24,9 +24,13 @@ while True:
                     if data == b'':
                         break
                     output = json.loads(data.decode("utf-8"))
-                    print(output)
+                    millis = int(round(time.time() * 1000))
+                    data_for_file = {}
+                    data_for_file['data'] = output
+                    data_for_file['millis'] = millis
+                    print(data_for_file)
                     with open(file, 'w') as f:
-                        f.write(data.decode("utf-8"))
+                        f.write(json.dumps(data_for_file))
 
                 except Exception as e:
                     print(f'Got exception:\n{str(e)}\nAborting iteration')

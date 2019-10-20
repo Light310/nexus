@@ -24,7 +24,8 @@ urlpatterns = [
     path('get_speed', views.get_speed),
     path('set_speed', views.set_speed),
     path('get_batteries_values', views.get_batteries_values),
-    path('get_gyroaccel_data', views.get_gyroaccel_data),       
+    path('get_gyroaccel_data', views.get_gyroaccel_data),    
+    path('get_fenix_data', views.get_fenix_data),     
     path('command', views.command),
     path('read_command', views.read_command),
 ]
