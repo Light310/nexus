@@ -8,24 +8,8 @@
     <title>Nexus</title>
     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/ico">
 </head>
-<!--<body style="background-image: url({% static "images/background.jpg" %});">-->
 <body class="c_body">
 <div class="all-blocks">
-  <!--
-  <div class="block control-1">
-    <div id = "btn-lstrafe" class="control-button">&#8592;</div>
-    <div id = "btn-forward" class="control-button">&#8593;</div>
-    <div id = "btn-rstrafe" class="control-button">&#8594;</div>
-    <div id = "btn-lturn" class="control-button">&#8630;</div>
-    <div id = "btn-backward" class="control-button">&#8595;</div>
-    <div id = "btn-rturn" class="control-button">&#8631;</div>
-  </div>
-  <div class="block control-2">
-    <div id = "btn-lforw" class="control-button">&#8598;</div>
-    <div id = "btn-rforw" class="control-button">&#8599;</div>
-    <div id = "btn-lbackw" class="control-button">&#8601;</div>
-    <div id = "btn-rbackw" class="control-button">&#8600;</div>
-  </div>-->
   <div class="block activation-speed">
     <div id = "btn-activate" class="control-button button-text">On (Y)</div>
     <div id = "btn-deactivate" class="control-button button-text">Off (U)</div>
@@ -34,32 +18,32 @@
     <div id = "div-speed" class="control-button"></div>
     <div id = "btn-plus-speed" class="control-button">+</div>
   </div>
-  <div class="block supply">
-    <div class="simple-div">
-        <div style="vertical-align: middle;display: inline-block;"><img class="image-battery" src="/static/images/battery_image.png"></div>
-        <div style="vertical-align: middle;clear: none;display: inline-block;margin: 0px 5px;width: 40px;">PI</div>
-        <div style="display: inline-block;" id="pi-battery">0V / 0%</div>
-    </div>
-    <div class="simple-div">
-        <div style="vertical-align: middle;display: inline-block;"><img class="image-battery" src="/static/images/battery_image.png"></div>
-        <div style="vertical-align: middle;clear: none;display: inline-block;margin: 0px 5px;width: 40px;">Servo</div>
-        <div style="display: inline-block;" id="servo-battery">0V / 0%</div>
-    </div>
-  </div>
-  <div class="block gyroaccel">
-    <div class="gyro-middle-block">
-        <div class="gyro-inner-block">X</div>
-        <div class="gyro-inner-block" id="gyro-x">0</div>
-    </div>
-    <div class="gyro-middle-block">
-        <div class="gyro-inner-block">Y</div>
-        <div class="gyro-inner-block" id="gyro-y">0</div>
-    </div>
-    <div class="gyro-middle-block">
-        <div class="gyro-inner-block">Z</div>
-        <div class="gyro-inner-block" id="gyro-z">0</div>
-    </div>
-  </div>
+  <div class="block-fenix-data">
+        <div class="block-line">
+          <div class="block-param">RPI Voltage</div>
+          <div class="block-value" id="rpi-voltage">00.00</div>
+        </div>
+        <div class="block-line">
+            <div class="block-param">Servo Voltage</div>
+            <div class="block-value" id="srv-voltage">00.00</div>
+        </div>
+        <div class="block-line">
+            <div class="block-param">RPI CPU Temp</div>
+            <div class="block-value" id="cpu-temp">00.00</div>
+        </div>
+        <div class="block-line">
+            <div class="block-param">Pitch (X)</div>
+            <div class="block-value" id="ga-x">00.00</div>
+        </div>
+        <div class="block-line">
+            <div class="block-param">Yaw (Y)</div>
+            <div class="block-value" id="ga-y">00.00</div>
+        </div>
+        <div class="block-line">
+            <div class="block-param">Roll (Z)</div>
+            <div class="block-value" id="ga-z">00.00</div>
+        </div>
+  </div>  
 </div>
 <div class="div-image-holder">
   <canvas id="video-canvas" class="image-src" width="1024" height="576">
@@ -86,47 +70,28 @@
 var myImageElement = document.getElementById('myImage');
 
 
-function update_batteries() {
-  fetch('/get_batteries_values')
+function update_fenix_data() {
+  fetch('/get_fenix_data')
     .then(response => response.json())
     .then(data => {
-        pi = data['pi'];
-        pi_pct = data['pi_pct'];
-        servo = data['servo'];
-        servo_pct = data['servo_pct'];
-        document.getElementById('pi-battery').innerHTML = pi+'V / '+pi_pct+'%';
-        document.getElementById('servo-battery').innerHTML = servo+'V / '+servo_pct+'%';
+        document.getElementById('rpi-voltage').innerHTML = data['data']['v_rpi'];
+        document.getElementById('srv-voltage').innerHTML = data['data']['v_srv'];
+        document.getElementById('cpu-temp').innerHTML = data['data']['cpu'];
+        document.getElementById('ga-x').innerHTML = data['data']['x'];
+        document.getElementById('ga-y').innerHTML = data['data']['y'];
+        document.getElementById('ga-z').innerHTML = data['data']['z'];
     })
     .catch(err => {
         console.error('An error ocurred', err);
     });
 }
 
+/*
 setInterval(function() {    
-    update_batteries();
-}, 3000);
-
-
-function update_gyroaccel() {
-  fetch('/get_gyroaccel_data')
-    .then(response => response.json())
-    .then(data => {
-        x = data['x'];
-        y = data['y'];
-        z = data['z'];
-        document.getElementById('gyro-x').innerHTML = x;
-        document.getElementById('gyro-y').innerHTML = y;
-        document.getElementById('gyro-z').innerHTML = z;
-    })
-    .catch(err => {
-        console.error('An error ocurred', err);
-    });
-}
-
-setInterval(function() {    
-    update_gyroaccel();
-}, 200);
-
+    update_fenix_data();
+}, 500);
+*/
+//update_fenix_data();
 
 function getMillis() {
     var dttm = new Date();

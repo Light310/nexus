@@ -54,7 +54,7 @@ def read_command(request):
         millis_prev = int(data[0])
         command = data[1]
         millis_cur = int(round(time.time() * 1000))
-        if millis_cur - millis_prev > 1000:
+        if millis_cur - millis_prev > 2000:
             data = 'None'
         else:
             data = command
