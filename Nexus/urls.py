@@ -20,6 +20,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
+    path('', views.index),
     path('view-stream/', views.view_stream),
     path('get_speed', views.get_speed),
     path('set_speed', views.set_speed),

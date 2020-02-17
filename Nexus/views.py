@@ -4,6 +4,8 @@ import json
 from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 
+def index(request):
+    return render(request, 'templates/index.html', {})
 
 def home(request):
     return render(request, 'templates/home.html', {})       
@@ -54,7 +56,7 @@ def read_command(request):
         millis_prev = int(data[0])
         command = data[1]
         millis_cur = int(round(time.time() * 1000))
-        if millis_cur - millis_prev > 2000:
+        if millis_cur - millis_prev > 700:
             data = 'None'
         else:
             data = command

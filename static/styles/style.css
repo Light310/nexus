@@ -231,3 +231,11 @@ outline:none;
     padding: 0;
     list-style: none;
 }
+
+.fox_body {
+    background-image: url("../images/fox_photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: left;
+    margin-left: 100px;
+}

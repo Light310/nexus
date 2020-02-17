@@ -11,9 +11,9 @@
 <body class="c_body">
 <div class="all-blocks">
   <div class="block activation-speed">
-    <div id = "btn-activate" class="control-button button-text">On (Y)</div>
-    <div id = "btn-deactivate" class="control-button button-text">Off (U)</div>
-    <div id = "btn-exit" class="control-button button-text">Quit (I)</div>
+    <div id = "btn-activate" class="control-button button-text">Up (Y)</div>
+    <div id = "btn-deactivate" class="control-button button-text">Down (U)</div>
+    <div id = "btn-exit" class="control-button button-text">Exit (I)</div>
     <div id = "btn-minus-speed" class="control-button">-</div>
     <div id = "div-speed" class="control-button"></div>
     <div id = "btn-plus-speed" class="control-button">+</div>
@@ -86,11 +86,11 @@ function update_fenix_data() {
     });
 }
 
-/*
+
 setInterval(function() {    
     update_fenix_data();
 }, 500);
-*/
+
 //update_fenix_data();
 
 function getMillis() {
@@ -217,55 +217,55 @@ document.onkeydown = function(event) {
 
     if (ch == "Q".charCodeAt(0)) {
         /*document.getElementById("btn-lstrafe").classList.add("pressed");*/
-        command = 'StrafeLeft';
+        command = 'strafeleft';
     }
     else if (ch == "W".charCodeAt(0)) {
         /*document.getElementById("btn-forward").classList.add("pressed");*/
-        command = 'Forward';
+        command = 'forward';
     }
     else if (ch == "E".charCodeAt(0)) {
         /*document.getElementById("btn-rstrafe").classList.add("pressed");*/
-        command = 'StrafeRight';
+        command = 'straferight';
     }
     else if (ch == "A".charCodeAt(0)) {
         /*document.getElementById("btn-lturn").classList.add("pressed");*/
-        command = 'TurnLeft';
+        command = 'turnleft';
     }
     else if (ch == "S".charCodeAt(0)) {
         /*document.getElementById("btn-backward").classList.add("pressed");*/
-        command = 'Back';
+        command = 'backwards';
     }
     else if (ch == "D".charCodeAt(0)) {
         /*document.getElementById("btn-rturn").classList.add("pressed");*/
-        command = 'TurnRight';
+        command = 'turnright';
     }
     else if (ch == "R".charCodeAt(0)) {
         /*document.getElementById("btn-lforw").classList.add("pressed");*/
-        command = 'LeftForward';
+        command = 'lookleft';
     }
     else if (ch == "T".charCodeAt(0)) {
         /*document.getElementById("btn-rforw").classList.add("pressed");*/
-        command = 'RightForward';
+        command = 'lookright';
     }
     else if (ch == "F".charCodeAt(0)) {
         /*document.getElementById("btn-lbackw").classList.add("pressed");*/
-        command = 'LeftBackwards';
+        command = 'lookup';
     }
     else if (ch == "G".charCodeAt(0)) {
         /*document.getElementById("btn-rbackw").classList.add("pressed");*/
-        command = 'RightBackwards';
+        command = 'lookdown';
     }
     else if (ch == "Y".charCodeAt(0)) {
         document.getElementById("btn-activate").classList.add("pressed");
-        command = 'Activate';
+        command = 'up';
     }
     else if (ch == "U".charCodeAt(0)) {
         document.getElementById("btn-deactivate").classList.add("pressed");
-        command = 'Deactivate';
+        command = 'down';
     }
     else if (ch == "I".charCodeAt(0)) {
         document.getElementById("btn-exit").classList.add("pressed");
-        command = 'Exit';
+        command = 'exit';
     }
 
     else if (ch == 107) { // + sign

@@ -25,7 +25,7 @@ SECRET_KEY = 'rk33@y+18mlu*jbbfpsc$#&=a(t^@qzgr)yn!&t=x75^%s1&s%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -121,8 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+#STATIC_URL = 'static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATIC_ROOT = '/nexus/static/'
+#STATIC_ROOT = '/nexus'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR, 'static', 'images'),
@@ -135,5 +137,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '78.46.205.128'
+    '78.46.205.128',
+    '.foxphoto.pro',
+    '*'
 ]
