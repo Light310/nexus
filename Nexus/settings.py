@@ -122,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-STATIC_ROOT = '/nexus/static/'
+STATIC_ROOT = '/nexus/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR, 'static', 'images'),
@@ -135,5 +135,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '78.46.205.128'
+    '84.201.153.201'
 ]
